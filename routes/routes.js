@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var db = require('monk')('localhost/jobsly');
+require('dotenv').load();
+var db = require('monk')(process.env.MONGOLAB_URI);
 var Jobsly = db.get('jobsly');
 
 router.get('/jobsly/', function(req, res) { // INDEX

@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/api/jobsly', jobsly);
+app.use('/api', jobsly);
 
 app.listen(process.env.PORT || 8080);
 console.log("Server started on localhost://8080");
