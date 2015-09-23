@@ -1,4 +1,5 @@
 var express = require('express');
+require('dotenv').load();
 var bodyParser = require('body-parser');
 var jobsly = require('./routes/routes');
 
