@@ -63,6 +63,4 @@ router.delete('/jobsly/:id', function(req, res) { // DESTROY
   })
 })
 
-
-
 module.exports = router;
